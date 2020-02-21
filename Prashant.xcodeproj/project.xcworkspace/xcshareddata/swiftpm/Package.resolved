@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "ce5be6fbc6f51414c49f56fc8e2b7c99253d9f8e",
+          "version": "4.9.0"
+        }
+      },
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": null,
+          "revision": "95fe8db1c34b6ef55f7956dc821ad34f32b9aa72",
+          "version": "6.5.1"
+        }
+      },
+      {
+        "package": "JGProgressHUD",
+        "repositoryURL": "https://github.com/JonasGessner/JGProgressHUD.git",
+        "state": {
+          "branch": null,
+          "revision": "3b9aa979b56f4f1b5983636d8ba37dffe35721f6",
+          "version": "2.0.4"
+        }
+      },
+      {
+        "package": "Material",
+        "repositoryURL": "https://github.com/CosmicMind/Material.git",
+        "state": {
+          "branch": null,
+          "revision": "059ed9c336d24b5f6383bec0346ae7c314724120",
+          "version": "3.1.8"
+        }
+      },
+      {
+        "package": "Motion",
+        "repositoryURL": "https://github.com/CosmicMind/Motion.git",
+        "state": {
+          "branch": null,
+          "revision": "808ac0cf1b67c5e4163ee867dd6c056836fcbc58",
+          "version": "3.1.3"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "b3e888b4972d9bc76495dd74d30a8c7fad4b9395",
+          "version": "5.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

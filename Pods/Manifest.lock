@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.9.1)
+  - IQKeyboardManagerSwift (6.5.4)
+  - Kingfisher (5.13.1):
+    - Kingfisher/Core (= 5.13.1)
+  - Kingfisher/Core (5.13.1)
+  - KRActivityIndicatorView (3.0.4)
+  - KRProgressHUD (3.4.4):
+    - KRActivityIndicatorView (= 3.0.4)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 5.13)
+  - KRProgressHUD (~> 3.4.4)
+  - RxCocoa (~> 5.0)
+  - RxSwift (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  Kingfisher: f33a848445e33c543620812158dc5d47f6bf90df
+  KRActivityIndicatorView: 549db10b9578d58bac73db063d8b544e8970f7f2
+  KRProgressHUD: c3b9a48a0ee4824ea13212ac3f1efa50dca021e3
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+
+PODFILE CHECKSUM: fa614d9f7c6e3ac5245403586d7ba7d444809fe6
+
+COCOAPODS: 1.8.3
