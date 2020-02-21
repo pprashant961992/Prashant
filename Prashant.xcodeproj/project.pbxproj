@@ -19,6 +19,9 @@
 		188B6AA02400363600613827 /* CSUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A972400363600613827 /* CSUrl.swift */; };
 		188B6AA32400385100613827 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188B6AA22400385100613827 /* Colors.xcassets */; };
 		188B6AA624003A4700613827 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6AA524003A4700613827 /* ImageCollectionViewCell.swift */; };
+		188B6AA82400406400613827 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6AA72400406400613827 /* HomeDetailViewController.swift */; };
+		188B6AAA240040C200613827 /* HomeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6AA9240040C200613827 /* HomeDetailViewModel.swift */; };
+		188B6AAC240041F900613827 /* ImageDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6AAB240041F900613827 /* ImageDetailTableViewCell.swift */; };
 		18ADD7A822537EBE003D2556 /* ValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADD7A522537EBE003D2556 /* ValidationViewModel.swift */; };
 		18ADD7B12254B9BB003D2556 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADD7B02254B9BB003D2556 /* BaseViewModel.swift */; };
 		18ADD7B322560241003D2556 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADD7B222560241003D2556 /* Constants.swift */; };
@@ -48,6 +51,9 @@
 		188B6A972400363600613827 /* CSUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUrl.swift; sourceTree = "<group>"; };
 		188B6AA22400385100613827 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		188B6AA524003A4700613827 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		188B6AA72400406400613827 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		188B6AA9240040C200613827 /* HomeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewModel.swift; sourceTree = "<group>"; };
+		188B6AAB240041F900613827 /* ImageDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailTableViewCell.swift; sourceTree = "<group>"; };
 		18ADD7A522537EBE003D2556 /* ValidationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationViewModel.swift; sourceTree = "<group>"; };
 		18ADD7B02254B9BB003D2556 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		18ADD7B222560241003D2556 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		188B6AA424003A4700613827 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				188B6AAB240041F900613827 /* ImageDetailTableViewCell.swift */,
 				188B6AA524003A4700613827 /* ImageCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -89,8 +96,9 @@
 		18ADD7A322537EAE003D2556 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				188B6A8C2400351B00613827 /* HomeViewModel.swift */,
 				18ADD7B02254B9BB003D2556 /* BaseViewModel.swift */,
+				188B6A8C2400351B00613827 /* HomeViewModel.swift */,
+				188B6AA9240040C200613827 /* HomeDetailViewModel.swift */,
 				18ADD7A522537EBE003D2556 /* ValidationViewModel.swift */,
 			);
 			path = ViewModels;
@@ -148,6 +156,7 @@
 			children = (
 				18D4BC15212AC7C9008A1472 /* BaseViewController.swift */,
 				188B6A8A240034E100613827 /* HomeViewController.swift */,
+				188B6AA72400406400613827 /* HomeDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -325,14 +334,17 @@
 				18D4BC1E212AF152008A1472 /* UIColor.swift in Sources */,
 				18ADD7B12254B9BB003D2556 /* BaseViewModel.swift in Sources */,
 				188B6A9C2400363600613827 /* CSImage.swift in Sources */,
+				188B6AAC240041F900613827 /* ImageDetailTableViewCell.swift in Sources */,
 				18D4BBE2212A9752008A1472 /* AppDelegate.swift in Sources */,
 				18D4BC14212AC73D008A1472 /* UIView.swift in Sources */,
 				188B6AA624003A4700613827 /* ImageCollectionViewCell.swift in Sources */,
 				188B6A9A2400363600613827 /* CSProfileImage.swift in Sources */,
+				188B6AAA240040C200613827 /* HomeDetailViewModel.swift in Sources */,
 				188B6A992400363600613827 /* CSSponsorship.swift in Sources */,
 				180CA72D219954BE00EBC498 /* BaseWebservice.swift in Sources */,
 				18D4BC10212ABF17008A1472 /* String.swift in Sources */,
 				188B6AA02400363600613827 /* CSUrl.swift in Sources */,
+				188B6AA82400406400613827 /* HomeDetailViewController.swift in Sources */,
 				18D4BC16212AC7C9008A1472 /* BaseViewController.swift in Sources */,
 				188B6A8D2400351B00613827 /* HomeViewModel.swift in Sources */,
 				18ADD7A822537EBE003D2556 /* ValidationViewModel.swift in Sources */,
@@ -417,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -471,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -488,7 +500,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Prashant/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +521,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Prashant/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

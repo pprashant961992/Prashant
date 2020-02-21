@@ -54,7 +54,6 @@ class BaseWebservice: NSObject {
         aRequest.validate().responseString { response in
             switch response.result {
             case .success:
-                print("Response :" + response.result.value!)
                 let data : Any?
                 if(isdictionaryRequired){
                     data = self.convertToDictionary(text: response.result.value ?? "")
@@ -62,12 +61,10 @@ class BaseWebservice: NSObject {
                 else{
                     data = response.result.value ?? ""
                 }
-                
                 result(data, nil)
             case .failure(let error):
                 var message = ""
                 var tCode = -1
-                print("Response :" + (response.result.value ?? ""))
                 if let error = error as? AFError {
                     switch error {
                     case .invalidURL(let url):

@@ -21,11 +21,10 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = UIColor(named: "themeColor")!
     }
     
-    func showSnackbar(_ message : String) {
-//        let snackbar = TTGSnackbar.init(message: message, duration: .long)
-//        snackbar.containerView = self.view
-//        snackbar.animationType = .slideFromTopBackToTop
-//        snackbar.show()
+    func alertView(title : String , msg : String, view : UIViewController)  {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        view.present(alert, animated: true, completion: nil)
     }
     
     func showHud(message : String = "Please wait...")  {

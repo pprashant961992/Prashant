@@ -43,7 +43,11 @@ extension HomeViewController : UICollectionViewDataSource,UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        let item = self.viewModel.arrImages.value[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "HomeDetailViewController") as! HomeDetailViewController
+        controller.viewModel.image.accept(item)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -61,51 +65,47 @@ extension HomeViewController : UICollectionViewDataSource,UICollectionViewDelega
 
 extension HomeViewController {
     func createViewModelBinding(){
-           
-           let layout = UICollectionViewFlowLayout()
-           layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
-           layout.minimumLineSpacing = spacing
-           layout.minimumInteritemSpacing = spacing
-           self.clsHome?.collectionViewLayout = layout
-           
-       }
-       
-       func createCallbacks (){
-           
-           // success
-           viewModel.arrImages.asObservable()
-               .bind{ value in
-                   if value.count > 0{
-                       self.clsHome.reloadData()
-                   }
-               }.disposed(by: disposeBag)
-           // success
-           viewModel.isSuccess.asObservable()
-               .bind{ value in
-                   if value{
-                       NSLog("Successfull")
-                       self.navigationController?.popViewController(animated: true)
-                   }
-               }.disposed(by: disposeBag)
-           
-           // errors
-           viewModel.errorMsg.asObservable()
-               .bind { errorMessage in
-                   if errorMessage.count > 0 {
-                   // Show error
-                       NSLog("Failure : " + errorMessage)
-                       
-                   }
-               }.disposed(by: disposeBag)
-           
-           viewModel.isLoading.asObservable()
-               .bind { value in
-                   if value {
-                       self.showHud()
-                   } else {
-                       self.hideHud()
-                   }
-           }.disposed(by: disposeBag)
-           
-       }
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
+        self.clsHome?.collectionViewLayout = layout
+        
+    }
+    
+    func createCallbacks (){
+        
+        // success
+        viewModel.arrImages.asObservable()
+            .bind{ value in
+                self.clsHome.reloadData()
+        }.disposed(by: disposeBag)
+        
+        viewModel.isSuccess.asObservable()
+            .bind{ value in
+                if value{
+                    
+                }
+        }.disposed(by: disposeBag)
+        
+        // errors
+        viewModel.errorMsg.asObservable()
+            .bind { errorMessage in
+                if errorMessage.count > 0 {
+                    NSLog("Failure : " + errorMessage)
+                    self.alertView(title: errorMessage, msg: "", view: self)
+                }
+        }.disposed(by: disposeBag)
+        
+        viewModel.isLoading.asObservable()
+            .bind { value in
+                if value {
+                    self.showHud()
+                } else {
+                    self.hideHud()
+                }
+        }.disposed(by: disposeBag)
+        
+    }
 }
