@@ -10,16 +10,15 @@ import UIKit
 import Alamofire
 
 class BaseWebservice: NSObject {
-
-    let baseUrl = ""
+    
+    let baseUrl = "https://api.unsplash.com/"
     var token = ""
     var headers : HTTPHeaders = [
-        "Accept": "application/json"
+        "Authorization": "Client-ID sBBIbf4rSlUX4PAK7quGkYqk3Hk4WulcFZO-F3NQ3x0"
     ]
     
     init(aToken : String) {
-        token = aToken
-        headers.updateValue("Bearer " + aToken, forKey: "Authorization")
+        
     }
     
     func call(url : String, isdictionaryRequired : Bool = true , method : HTTPMethod, parameters :  Any, result : @escaping (_ value: Any?, _ error: NSError?) -> Void)  {
@@ -42,30 +41,17 @@ class BaseWebservice: NSObject {
             finalURL = tempURL
             data = try! JSONSerialization.data(withJSONObject: parameters)
         }
-        
-        print("finalURL : " + (finalURL?.absoluteString ?? ""))
-        print("Token" + "\(token)")
         var request = URLRequest(url: finalURL!)
         request.httpMethod = method.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer " + token, forHTTPHeaderField: "Authorization")
-        //let values = ["06786984572365", "06644857247565", "06649998782227"]
-        
+
+        request.allHTTPHeaderFields = headers
         request.httpBody = data
         
-        //       Alamofire.request(baseUrl + url, method: method, parameters: parameters as? Parameters, encoding: httpEncoding , headers: headers).validate().responseString { response in
         let aRequest = Alamofire.request(request)
         
         aRequest.validate().responseString { response in
-            print(response.request!)
-            //  print("Headers : " + response.request?.allHTTPHeaderFields!)
-            
-            if let data = response.request?.httpBody {
-                if let decoded = String(data: data, encoding: .utf8){
-                    print("Request : " + decoded)
-                    
-                }
-            }
             switch response.result {
             case .success:
                 print("Response :" + response.result.value!)
@@ -114,7 +100,7 @@ class BaseWebservice: NSObject {
                             message = "Response status code was unacceptable: \(code)"
                             print(message)
                             if response.data != nil{
-                                
+                                print("Error response : \n" + (String(data: response.data!, encoding: String.Encoding.utf8) ?? "some error"))
                             }
                             
                         }
@@ -136,7 +122,7 @@ class BaseWebservice: NSObject {
             }
         }
     }
-    
+     
     public func convertToDictionary(text: String) -> Any? {
         if let data = text.data(using: .utf8) {
             do {

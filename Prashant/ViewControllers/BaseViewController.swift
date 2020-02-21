@@ -17,6 +17,10 @@ protocol BaseViewControllerProtocol {
 class BaseViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
   
+    override func viewDidLoad() {
+        self.view.backgroundColor = UIColor(named: "themeColor")!
+    }
+    
     func showSnackbar(_ message : String) {
 //        let snackbar = TTGSnackbar.init(message: message, duration: .long)
 //        snackbar.containerView = self.view

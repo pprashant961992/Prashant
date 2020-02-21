@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		180CA72D219954BE00EBC498 /* BaseWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CA72C219954BE00EBC498 /* BaseWebservice.swift */; };
+		188B6A8B240034E100613827 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A8A240034E100613827 /* HomeViewController.swift */; };
+		188B6A8D2400351B00613827 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A8C2400351B00613827 /* HomeViewModel.swift */; };
+		188B6A8F2400356100613827 /* ImageWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A8E2400356100613827 /* ImageWebservice.swift */; };
+		188B6A992400363600613827 /* CSSponsorship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A902400363600613827 /* CSSponsorship.swift */; };
+		188B6A9A2400363600613827 /* CSProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A912400363600613827 /* CSProfileImage.swift */; };
+		188B6A9B2400363600613827 /* CSLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A922400363600613827 /* CSLink.swift */; };
+		188B6A9C2400363600613827 /* CSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A932400363600613827 /* CSImage.swift */; };
+		188B6A9F2400363600613827 /* CSSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A962400363600613827 /* CSSponsor.swift */; };
+		188B6AA02400363600613827 /* CSUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6A972400363600613827 /* CSUrl.swift */; };
+		188B6AA32400385100613827 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188B6AA22400385100613827 /* Colors.xcassets */; };
+		188B6AA624003A4700613827 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B6AA524003A4700613827 /* ImageCollectionViewCell.swift */; };
 		18ADD7A822537EBE003D2556 /* ValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADD7A522537EBE003D2556 /* ValidationViewModel.swift */; };
 		18ADD7B12254B9BB003D2556 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADD7B02254B9BB003D2556 /* BaseViewModel.swift */; };
 		18ADD7B322560241003D2556 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADD7B222560241003D2556 /* Constants.swift */; };
@@ -15,7 +26,6 @@
 		18D4BBE7212A9752008A1472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D4BBE5212A9752008A1472 /* Main.storyboard */; };
 		18D4BBE9212A9753008A1472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D4BBE8212A9753008A1472 /* Assets.xcassets */; };
 		18D4BBEC212A9753008A1472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D4BBEA212A9753008A1472 /* LaunchScreen.storyboard */; };
-		18D4BC08212A9FF1008A1472 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4BC07212A9FF1008A1472 /* MainViewController.swift */; };
 		18D4BC0E212ABEBA008A1472 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4BC0D212ABEBA008A1472 /* UITextField.swift */; };
 		18D4BC10212ABF17008A1472 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4BC0F212ABF17008A1472 /* String.swift */; };
 		18D4BC14212AC73D008A1472 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4BC13212AC73D008A1472 /* UIView.swift */; };
@@ -27,6 +37,17 @@
 /* Begin PBXFileReference section */
 		039DF9D89082F8BFDB590B9F /* Pods_Prashant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prashant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		180CA72C219954BE00EBC498 /* BaseWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebservice.swift; sourceTree = "<group>"; };
+		188B6A8A240034E100613827 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		188B6A8C2400351B00613827 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		188B6A8E2400356100613827 /* ImageWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWebservice.swift; sourceTree = "<group>"; };
+		188B6A902400363600613827 /* CSSponsorship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSponsorship.swift; sourceTree = "<group>"; };
+		188B6A912400363600613827 /* CSProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSProfileImage.swift; sourceTree = "<group>"; };
+		188B6A922400363600613827 /* CSLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSLink.swift; sourceTree = "<group>"; };
+		188B6A932400363600613827 /* CSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSImage.swift; sourceTree = "<group>"; };
+		188B6A962400363600613827 /* CSSponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSSponsor.swift; sourceTree = "<group>"; };
+		188B6A972400363600613827 /* CSUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUrl.swift; sourceTree = "<group>"; };
+		188B6AA22400385100613827 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		188B6AA524003A4700613827 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		18ADD7A522537EBE003D2556 /* ValidationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationViewModel.swift; sourceTree = "<group>"; };
 		18ADD7B02254B9BB003D2556 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		18ADD7B222560241003D2556 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -36,7 +57,6 @@
 		18D4BBE8212A9753008A1472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D4BBEB212A9753008A1472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D4BBED212A9753008A1472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18D4BC07212A9FF1008A1472 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18D4BC0D212ABEBA008A1472 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		18D4BC0F212ABF17008A1472 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		18D4BC13212AC73D008A1472 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -58,9 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188B6AA424003A4700613827 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				188B6AA524003A4700613827 /* ImageCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		18ADD7A322537EAE003D2556 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				188B6A8C2400351B00613827 /* HomeViewModel.swift */,
 				18ADD7B02254B9BB003D2556 /* BaseViewModel.swift */,
 				18ADD7A522537EBE003D2556 /* ValidationViewModel.swift */,
 			);
@@ -91,6 +120,7 @@
 				18D4BBE1212A9752008A1472 /* AppDelegate.swift */,
 				18ADD7B222560241003D2556 /* Constants.swift */,
 				18D4BBE8212A9753008A1472 /* Assets.xcassets */,
+				188B6AA22400385100613827 /* Colors.xcassets */,
 				18D4BC03212A9FD4008A1472 /* Designs */,
 				18D4BC04212A9FD4008A1472 /* Extensions */,
 				18D4BBED212A9753008A1472 /* Info.plist */,
@@ -99,6 +129,7 @@
 				18D4BC00212A9FD4008A1472 /* ViewControllers */,
 				18ADD7A322537EAE003D2556 /* ViewModels */,
 				18D4BBFF212A9FD4008A1472 /* Webservices */,
+				188B6AA424003A4700613827 /* Cell */,
 			);
 			path = Prashant;
 			sourceTree = "<group>";
@@ -107,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				180CA72C219954BE00EBC498 /* BaseWebservice.swift */,
+				188B6A8E2400356100613827 /* ImageWebservice.swift */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -115,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				18D4BC15212AC7C9008A1472 /* BaseViewController.swift */,
-				18D4BC07212A9FF1008A1472 /* MainViewController.swift */,
+				188B6A8A240034E100613827 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,6 +174,12 @@
 		18D4BC05212A9FD4008A1472 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				188B6A932400363600613827 /* CSImage.swift */,
+				188B6A922400363600613827 /* CSLink.swift */,
+				188B6A912400363600613827 /* CSProfileImage.swift */,
+				188B6A962400363600613827 /* CSSponsor.swift */,
+				188B6A902400363600613827 /* CSSponsorship.swift */,
+				188B6A972400363600613827 /* CSUrl.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D4BBEC212A9753008A1472 /* LaunchScreen.storyboard in Resources */,
+				188B6AA32400385100613827 /* Colors.xcassets in Resources */,
 				18D4BBE9212A9753008A1472 /* Assets.xcassets in Resources */,
 				18D4BBE7212A9752008A1472 /* Main.storyboard in Resources */,
 			);
@@ -282,17 +321,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188B6A9F2400363600613827 /* CSSponsor.swift in Sources */,
 				18D4BC1E212AF152008A1472 /* UIColor.swift in Sources */,
 				18ADD7B12254B9BB003D2556 /* BaseViewModel.swift in Sources */,
-				18D4BC08212A9FF1008A1472 /* MainViewController.swift in Sources */,
+				188B6A9C2400363600613827 /* CSImage.swift in Sources */,
 				18D4BBE2212A9752008A1472 /* AppDelegate.swift in Sources */,
 				18D4BC14212AC73D008A1472 /* UIView.swift in Sources */,
+				188B6AA624003A4700613827 /* ImageCollectionViewCell.swift in Sources */,
+				188B6A9A2400363600613827 /* CSProfileImage.swift in Sources */,
+				188B6A992400363600613827 /* CSSponsorship.swift in Sources */,
 				180CA72D219954BE00EBC498 /* BaseWebservice.swift in Sources */,
 				18D4BC10212ABF17008A1472 /* String.swift in Sources */,
+				188B6AA02400363600613827 /* CSUrl.swift in Sources */,
 				18D4BC16212AC7C9008A1472 /* BaseViewController.swift in Sources */,
+				188B6A8D2400351B00613827 /* HomeViewModel.swift in Sources */,
 				18ADD7A822537EBE003D2556 /* ValidationViewModel.swift in Sources */,
+				188B6A9B2400363600613827 /* CSLink.swift in Sources */,
 				18D4BC0E212ABEBA008A1472 /* UITextField.swift in Sources */,
 				18ADD7B322560241003D2556 /* Constants.swift in Sources */,
+				188B6A8F2400356100613827 /* ImageWebservice.swift in Sources */,
+				188B6A8B240034E100613827 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +488,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Prashant/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +509,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Prashant/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
